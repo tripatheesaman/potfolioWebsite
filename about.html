@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7f85005135.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <figure class="header__figure" id="header__figure">
+        <img
+          src="./images/logo.png"
+          alt="Logo"
+          width="1080"
+          height="1350"
+          title="Logo"
+        />
+        <figcaption class="offscreen" id="offscreen">My Logo!</figcaption>
+      </figure>
+      <nav
+        class="header__navigation"
+        id="header__navigation"
+        aria-label="primary-navigation"
+      >
+        <ul id="sidemenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+          <i class="fa-solid fa-xmark" id="menu" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" id="menu" onclick="openMenu()"></i>
+      </nav>
+    </header>
+    <main class="main about" id="about">
+      <article class="main__article about__article" id="about__article">
+        <section class="about__section" id="about_section">
+          <h1 class="about__h1" id="about__h1">About Me</h1>
+          <figure class="about__figure" id="about__figure">
+            <img
+              src="./images/me.png"
+              alt="Me"
+              width="403"
+              height="193"
+              title="Me"
+            />
+            <figcaption class="offscreen" id="offscreen">
+              A Picture of Me
+            </figcaption>
+          </figure>
+          <p class="about__p" id="about__p">
+            My name is Saman Tripathee. I am currently a student studying
+            Computer Engineering and am really interested in web development and
+            designs.
+          </p>
+        </section>
+        <section class="about__section about__tabs" id="about__section">
+          <h2
+            class="about__h2 active-link"
+            id="about__h2"
+            onclick="openTab('skills')"
+          >
+            My Skills
+          </h2>
+          <h2 class="about__h2" id="about__h2" onclick="openTab('education')">
+            My Education
+          </h2>
+        </section>
+        <section class="about__tab-contents active-tab" id="skills">
+          <ul>
+            <li>
+              <span>Photoshop</span> <br />Editing Photos and Designing Posters
+            </li>
+            <li><span>Illustrator</span> <br />Designing Logos</li>
+            <li><span>Web Development</span> <br />Web App Development</li>
+          </ul>
+        </section>
+        <section class="about__tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2018-2023(Expected)</span> <br />Bachelors In Computer
+              Engineering
+            </li>
+            <li>
+              <span>2016-2018</span> <br />College at Prasadi Academy(GPA-3.35)
+            </li>
+            <li>
+              <span>2016</span> <br />SLC-Grammar Public Higher Secondary
+              School(GPA-3.75)
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer class="footer" id="footer">
+      <p class="footer__p" id="footer_p">Copyright &copy; Saman</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

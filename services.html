@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Services</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7f85005135.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <figure class="header__figure" id="header__figure">
+        <img
+          src="./images/logo.png"
+          alt="Logo"
+          width="1080"
+          height="1350"
+          title="Logo"
+        />
+        <figcaption class="offscreen" id="offscreen">My Logo!</figcaption>
+      </figure>
+      <nav
+        class="header__navigation"
+        id="header__navigation"
+        aria-label="primary-navigation"
+      >
+        <ul id="sidemenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+          <i class="fa-solid fa-xmark" id="menu" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" id="menu" onclick="openMenu()"></i>
+      </nav>
+    </header>
+    <main class="main" id="main">
+      <article class="services__article main__article" id="main__article">
+        <h1 class="main__h1" id="main__h1">My Services</h1>
+        <section class="services-list" id="services-list">
+          <section class="services__section" id="services-item">
+            <i class="fa-solid fa-code"></i>
+            <h2 class="services__h2" id="services__h2">Web Development</h2>
+            <p class="services__p" id="services__p">
+              I can create and design beautiful and professional websites and
+              create web-apps as well.
+            </p>
+          </section>
+          <section class="services__section" id="services-item">
+            <i class="fa-solid fa-crop"></i>
+            <h2 class="services__h2" id="services__h2">Graphics Designing</h2>
+            <p class="services__p" id="services__p">
+              I can design posters for events, edit photos according to your
+              preferences and create custom logos as per your designs!
+            </p>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer class="footer" id="footer">
+      <p class="footer__p" id="footer_p">Copyright &copy; Saman</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Website</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+    src="https://kit.fontawesome.com/7f85005135.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body class="home__body">
+    <header class="header" id="header">
+      <figure class="header__figure" id="header__figure">
+        <img
+          src="./images/logo.png"
+          alt="Logo"
+          width="1080"
+          height="1350"
+          title="Logo"
+        />
+        <figcaption class="offscreen" id="offscreen">My Logo!</figcaption>
+      </figure>
+      <nav
+        class="header__navigation"
+        id="header__navigation"
+        aria-label="primary-navigation"
+      >
+        <ul id="sidemenu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+          <i class="fa-solid fa-xmark" id="menu" style="display:none;" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" id="menu" style="display:none;" onclick="openMenu()"></i>
+      </nav>
+    </header>
+    <main class="main main__home" id="main">
+      <article class="main__article home__article" id="main__article">
+        <h2 class="main__h2" id="main__h2">Web Developer</h2>
+        <h1 class="main__h1" id="home__h1">
+          Hi, I'm <span> Saman.</span> <br />
+          I like to code and design!
+        </h1>
+      </article>
+    </main>
+    <footer class="footer" id="footer">
+      <p class="footer__p" id="footer_p">
+        Copyright &copy;  Saman</span>
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
